@@ -1,4 +1,4 @@
-#include "unit1.h"
+п»ї#include "unit1.h"
 
 DWORD WINAPI ping_addr( void *ch );
 
@@ -31,10 +31,10 @@ int main( int argc, char * argv[] )
 
  h_icmp = LoadLibrary( "icmp.dll" );
   if( !h_icmp )
-   printf( "ошибка загрузки icmp.dll\n" );
+   printf( "РѕС€РёР±РєР° Р·Р°РіСЂСѓР·РєРё icmp.dll\n" );
 
   if( WSAStartup( MAKEWORD( 1, 0 ), &wsaData ) )
-   printf( "ошибка инициализации WSA" );
+   printf( "РѕС€РёР±РєР° РёРЅРёС†РёР°Р»РёР·Р°С†РёРё WSA" );
 
   p_icmp_create_file  = ( ICMPCreateFile  )GetProcAddress( h_icmp, "IcmpCreateFile"  );
   p_icmp_close_handle = ( IcmpCloseHandle )GetProcAddress( h_icmp, "IcmpCloseHandle" );
@@ -45,7 +45,7 @@ int main( int argc, char * argv[] )
    || ( p_icmp_send_echo    == 0 ) ) {
    FreeLibrary( h_icmp );
    WSACleanup();
-   printf( "ошибка инициализации функций icmp" );
+   printf( "РѕС€РёР±РєР° РёРЅРёС†РёР°Р»РёР·Р°С†РёРё С„СѓРЅРєС†РёР№ icmp" );
   }
 
  //

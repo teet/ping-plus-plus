@@ -51,6 +51,7 @@ typedef struct {
    unsigned char OptionsSize;                         // Size in bytes of options data
    unsigned char *OptionsData;                        // Pointer to options data
 } IP_OPTION_INFORMATION, * PIP_OPTION_INFORMATION;
+
 //---------------------------------------------------------------------------
 
 typedef struct {

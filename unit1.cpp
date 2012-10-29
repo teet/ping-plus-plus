@@ -57,7 +57,7 @@ int main( int argc, char * argv[] )
  h_stdout = GetStdHandle( STD_OUTPUT_HANDLE );
  GetConsoleScreenBufferInfo( h_stdout, &csbi );
 
- _setcursortype( _NOCURSOR );
+ //_setcursortype( _NOCURSOR );
 
  InitializeCriticalSection( &cs );
 
@@ -126,7 +126,7 @@ int main( int argc, char * argv[] )
 
  WaitForMultipleObjects( i, h_thread, 1, INFINITE );
 
- _setcursortype( _NORMALCURSOR );
+ //_setcursortype( _NORMALCURSOR );
  DeleteCriticalSection( &cs );
  FreeLibrary( h_icmp );
  WSACleanup( );

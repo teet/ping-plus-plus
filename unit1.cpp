@@ -26,8 +26,7 @@ int main( int argc, char * argv[] )
  WSADATA   wsaData;
  int i, i_textcolor;
 
- //
- clrscr();
+ //clrscr();
 
  h_icmp = LoadLibrary( "icmp.dll" );
   if( !h_icmp )

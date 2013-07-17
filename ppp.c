@@ -50,11 +50,9 @@ int main( int argc, char * argv[] )
    printf( "ошибка инициализации функций icmp" );
   }
 
- //
  for( i = 1; i < argc; i++ )
   if( strlen( argv[ i ] ) )
    strcpy( ip_addr[ i - 1 ], argv[ i ] );
- //
 
  h_stdout = GetStdHandle( STD_OUTPUT_HANDLE );
  GetConsoleScreenBufferInfo( h_stdout, &csbi );

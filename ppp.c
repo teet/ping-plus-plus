@@ -59,8 +59,6 @@ int main( int argc, char * argv[] )
  h_stdout = GetStdHandle( STD_OUTPUT_HANDLE );
  GetConsoleScreenBufferInfo( h_stdout, &csbi );
 
- //_setcursortype( _NOCURSOR );
-
  InitializeCriticalSection( &cs );
 
  mh_coord.X = 0;

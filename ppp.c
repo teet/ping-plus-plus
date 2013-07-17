@@ -1,4 +1,4 @@
-﻿#include "unit1.h"
+﻿#include "ppp.h"
 
 DWORD WINAPI ping_addr( void *ch );
 

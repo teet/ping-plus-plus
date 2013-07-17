@@ -17,7 +17,9 @@ IcmpCloseHandle p_icmp_close_handle;
 IcmpSendEcho    p_icmp_send_echo;
 
 char ip_addr[ MAXDNSNAME ][ COLCOUNT ];
-
+/**
+ * @fn main точка входа в программу
+ */
 int main( int argc, char * argv[] )
 {
  COORD  mh_coord;

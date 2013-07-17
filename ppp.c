@@ -1,5 +1,10 @@
 ﻿#include "ppp.h"
-
+/**
+ * @fn функция пинга адреса.
+ * 
+ * @param void *ch безтиповый указатель на адрес для пинга.
+ * @return int при успехе - возвращает 0, иначе код ошибки.
+ */
 DWORD WINAPI ping_addr( void *ch );
 
 BOOL   b_repeat = 1;

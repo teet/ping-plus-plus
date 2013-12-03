@@ -132,6 +132,7 @@ int main( int argc, char * argv[] )
  WSACleanup( );
  return 0;
 }
+
 ///
 DWORD WINAPI ping_addr( void *i )
 {
@@ -276,3 +277,4 @@ DWORD WINAPI ping_addr( void *i )
   ExitThread( 0 );
   return 0;
 }
+

@@ -6,6 +6,4 @@ test on WinXP
 
 testing web hooks
 
-first patch
-==============
 

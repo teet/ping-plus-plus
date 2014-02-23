@@ -119,9 +119,9 @@ int main( int argc, char * argv[] )
  sprintf( pc_head, "killing threads..." );
 
  EnterCriticalSection( &cs );
- SetConsoleCursorPosition( h_stdout, mh_coord );
- SetConsoleTextAttribute( h_stdout, i_textcolor );
- WriteConsole( h_stdout, pc_head, strlen( pc_head ), &ul_result, NULL );
+   SetConsoleCursorPosition( h_stdout, mh_coord );
+   SetConsoleTextAttribute( h_stdout, i_textcolor );
+   WriteConsole( h_stdout, pc_head, strlen( pc_head ), &ul_result, NULL );
  LeaveCriticalSection( &cs );
 
  WaitForMultipleObjects( i, h_thread, 1, INFINITE );
